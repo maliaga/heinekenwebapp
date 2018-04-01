@@ -1,0 +1,11 @@
+version: '2'
+services:
+    heinekenwebapp-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/heinekenwebapp/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=heinekenwebapp
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
